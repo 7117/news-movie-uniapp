@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/welcome/welcome"
+    "pages/welcome/welcome",
+    "pages/posts/post"
   ],
   "window": {
     "backgroundTextStyle": "light",
