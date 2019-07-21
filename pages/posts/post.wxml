@@ -11,15 +11,15 @@
     </swiper-item>
   </swiper>
 
-  <block wx:for="{{posts_key}}" wx:for-item="item">
+  <block wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="idx">
     <view>
       <!-- 第一部分 -->
       <view class="post-author-date">
         <image src="/images/post/cat.png" class="post-author"></image>
-        <text class="post-date">{{item.date}}</text>
+        <text class="post-date">{{item.date}}{{idx}}</text>
       </view>
       <!-- 第二部分 -->
-      <text class="post-tittle">真实的我们</text>
+      <text class="post-tittle">{{item.title}}</text>
       <!-- 第三部分 -->
       <image src="/images/post/crab.png" style="width:100%;height:500rpx;" class="post-image"></image>
       <text class="post-content">我们是谁  我们从哪里来我们是谁  我们从哪里来我们是谁  我们从哪里来我们是谁  我们从哪里来我们是谁  我们从哪里来我们是谁  我们从哪里来我们是谁  我们从哪里来我们是谁  我们从哪里来我们是谁  我们从哪里来</text>
