@@ -8,8 +8,7 @@ Page({
 
   },
 
-  onTap:function(){
-    console.log("aaaa");
+  onTap:function(event){
     // 父子关系的
     // wx.navigateTo({
     //   url: '../posts/post',
