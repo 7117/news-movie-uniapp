@@ -6,6 +6,11 @@ Page({
   /**
    * 页面的初始数据
    */
+
+  // 小程序总会读取data对象来做数据绑定，这个动作就是动作a（数据绑定）
+  // 动作a是在onload之后发生的  所以data上已经有数据了  不需要setdata
+  // 动作a是在onload之前发生的  onload就需要更新了
+  // 都用setdata就行  this.data.aa=sdd.aa(这个是更新)
   data: {},
 
 
