@@ -1,0 +1,7 @@
+<view>
+  <image src="/images/avatar/1.png">world</image>
+  <text>hello,qiyue</text>
+  <view>
+    <text>开启小程序</text>
+  </view>
+</view>
