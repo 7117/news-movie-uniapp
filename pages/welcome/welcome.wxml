@@ -1,7 +1,7 @@
-<view>
-  <image src="/images/avatar/1.png">world</image>
-  <text>hello,qiyue</text>
-  <view>
-    <text>开启小程序</text>
+<view class="container">
+  <image class="user-avatar" src="/images/avatar/1.png">world</image>
+  <text class="user-name">hello,nihao</text>
+  <view class="moto-container">
+    <text class="moto">开启小程序</text>
   </view>
 </view>
