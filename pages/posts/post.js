@@ -1,8 +1,6 @@
 // 必须使用相对路径
 var postsData = require('../../data/posts-data.js');
 
-
-// pages/posts/post.js
 Page({
 
   /**
