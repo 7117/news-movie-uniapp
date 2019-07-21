@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    date:"数据"
   },
 
 
@@ -13,7 +13,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var post_data={
+      date:"eee",
+      title:"aaa",
+      post_img:"/images/post/crab.png",
+      content:"我是谁我是谁啊我是谁啊我是谁啊我是谁啊我是谁啊我是谁啊我是谁啊我是谁啊我是谁啊我是谁啊啊",
+      view_num:"11",
+      collect_num:"97",
+      author_img:"/images/avatar/1.png",
+    }
+    this.setData(post_data);
   },
 
   /**
