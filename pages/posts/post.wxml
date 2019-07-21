@@ -21,7 +21,7 @@
       <!-- 第二部分 -->
       <text class="post-tittle">{{item.title}}</text>
       <!-- 第三部分 -->
-      <image src="/images/post/crab.png" style="width:100%;height:500rpx;" class="post-image"></image>
+      <image src="{{item.imgSrc}}" style="width:100%;height:500rpx;" class="post-image"></image>
       <text class="post-content">{{item.content}}</text>
       <!-- 第四部分 -->
       <view class="post-like">

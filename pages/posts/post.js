@@ -1,40 +1,22 @@
+// 必须使用相对路径
+var postsData = require('../../data/posts-data.js');
+
+
 // pages/posts/post.js
 Page({
 
   /**
    * 页面的初始数据
    */
-  data: {
-  },
+  data: {},
 
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    var post_data = [
-      {
-        date: "eee",
-        title: "aaa",
-        post_img: "/images/post/crab.png",
-        content: "我是谁谁啊我是谁啊我是谁啊我是谁啊我是谁啊我是谁啊我是谁啊我是谁啊我是谁啊我是谁啊啊",
-        view_num: "11",
-        collect_num: "97",
-        author_img: "/images/avatar/1.png",
-      },
-      {
-        date: "444",
-        title: "555",
-        post_img: "/images/post/crab.png",
-        content: "你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好",
-        view_num: "11",
-        collect_num: "97",
-        author_img: "/images/avatar/1.png",
-      }
-    ]
-
     this.setData({
-      posts_key: post_data,
+      posts_key: postsData.postList,
     });
   },
 
