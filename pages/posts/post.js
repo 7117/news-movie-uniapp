@@ -26,7 +26,7 @@ Page({
         date: "444",
         title: "555",
         post_img: "/images/post/crab.png",
-        content: "sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
+        content: "你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好",
         view_num: "11",
         collect_num: "97",
         author_img: "/images/avatar/1.png",
