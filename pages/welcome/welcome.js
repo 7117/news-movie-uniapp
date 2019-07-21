@@ -8,6 +8,19 @@ Page({
 
   },
 
+  onTap:function(){
+    console.log("aaaa");
+    // 父子关系的
+    // wx.navigateTo({
+    //   url: '../posts/post',
+    // });
+
+    // 跳转的
+    wx.redirectTo({
+      url: '../posts/post',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
