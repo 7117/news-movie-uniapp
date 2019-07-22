@@ -145,6 +145,7 @@ Page({
     })
   },
 
+  //  wx.showActionSheet
   onShareTap: function(event) {
     var itemList = [
       "分享给微信好友",
