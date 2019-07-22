@@ -15,7 +15,7 @@ Page({
     // });
 
     // 跳转的
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../posts/post',
     })
   },
