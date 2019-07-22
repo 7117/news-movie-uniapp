@@ -13,6 +13,8 @@
   </swiper>
 
   <block wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="idx">
-    <template is="postItem" data="{{item}}" />
+    <view bindtap="onPostTap" data-id = "{{item.postId}}">
+      <template is="postItem" data="{{item}}" />
+    </view>
   </block>
 </view>

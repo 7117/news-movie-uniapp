@@ -23,6 +23,14 @@ Page({
     });
   },
 
+  onPostTap: function(event) {
+    // currentTarget为当前对象  dataset为自定义对象  postId哪个属性
+    var postId = event.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: "post-detail/post-detail?id=" + postId
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
