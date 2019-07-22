@@ -6,7 +6,7 @@
         <text class="post-date">{{item.date}}{{idx}}</text>
       </view>
       <!-- 第二部分 -->
-      <text class="post-tittle">{{item.title}}</text>
+      <!-- <text class="post-tittle">{{item.title}}</text> -->
       <!-- 第三部分 -->
       <image src="{{item.imgSrc}}" style="width:100%;height:500rpx;" class="post-image"></image>
       <text class="post-content">{{item.content}}</text>
