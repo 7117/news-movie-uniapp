@@ -2,13 +2,13 @@
 <view>
   <swiper style="width:100%;height:500rpx;" autoplay="true">
     <swiper-item>
-      <image src="/images/iqiyi.png" style="width:100%;height:500rpx;"></image>
+      <image src="/images/iqiyi.png" bindtap="onPostTap" data-id="0" style="width:100%;height:500rpx;"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/vr.png" style="width:100%;height:500rpx;"></image>
+      <image src="/images/vr.png" bindtap="onPostTap" data-id="1" style="width:100%;height:500rpx;"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/wx.png" style="width:100%;height:500rpx;"></image>
+      <image src="/images/wx.png" bindtap="onPostTap" data-id="2" style="width:100%;height:500rpx;"></image>
     </swiper-item>
   </swiper>
 
