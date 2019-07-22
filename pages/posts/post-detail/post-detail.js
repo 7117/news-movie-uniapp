@@ -51,8 +51,7 @@ Page({
             isPlayingMusic: true
           })
         }
-        // if(app.globalData.g_currentMusicPostId == that.data.currentPostId )
-        // app.globalData.g_currentMusicPostId = that.data.currentPostId;
+      
       }
       app.globalData.g_isPlayingMusic = true;
     });
