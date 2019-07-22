@@ -180,6 +180,7 @@ Page({
       app.globalData.g_isPlayingMusic = false;
     } else {
       wx.playBackgroundAudio({
+        // 一定流媒体  不能本地
         dataUrl: postData.music.url,
         title: postData.music.title,
         coverImgUrl: postData.music.coverImg,
