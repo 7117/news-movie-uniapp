@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9673457e-ef51-419b-a177-e4dad935ac60" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/posts-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/posts-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/posts/post-item/post-item-template.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/post-item/post-item-template.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/posts/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/posts/post.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/posts/post.wxml" afterDir="false" />
-    </list>
+    <list default="true" id="9673457e-ef51-419b-a177-e4dad935ac60" name="默认更改列表" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-15" />
     <option name="y" value="-15" />
     <option name="width" value="3875" />
@@ -110,7 +104,7 @@
     <option name="totallyTimeSpent" value="872000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1549" height="837" extended-state="7" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
