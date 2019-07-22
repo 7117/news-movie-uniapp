@@ -1,4 +1,5 @@
 var postsData = require('../../../data/posts-data.js')
+// getApp获取全局的变量
 var app = getApp();
 Page({
   data: {
@@ -27,8 +28,7 @@ Page({
       wx.setStorageSync('posts_collected', postsCollected);
     }
 
-    if (app.globalData.g_isPlayingMusic && app.globalData.g_currentMusicPostId ===
-      postId) {
+    if (app.globalData.g_isPlayingMusic && app.globalData.g_currentMusicPostId === postId) {
       this.setData({
         isPlayingMusic: true
       })
@@ -55,7 +55,6 @@ Page({
         // app.globalData.g_currentMusicPostId = that.data.currentPostId;
       }
       app.globalData.g_isPlayingMusic = true;
-
     });
     wx.onBackgroundAudioPause(function() {
       var pages = getCurrentPages();
