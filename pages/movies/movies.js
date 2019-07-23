@@ -42,6 +42,7 @@ Page({
 
   getMovieListData: function (url, settedKey, categoryTitle) {
     var that = this;
+    // 异步的操作哈  wx.request
     wx.request({
       url: url,
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
