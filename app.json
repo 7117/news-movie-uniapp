@@ -6,7 +6,8 @@
     "pages/posts/post",
     "pages/posts/post-detail/post-detail",
     "pages/movies/movies",
-    "pages/stars/stars"
+    "pages/stars/stars",
+    "pages/movie/movie"
   ],
   "window": {
     "backgroundTextStyle": "light",
