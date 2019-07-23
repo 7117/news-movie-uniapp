@@ -48,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -59,6 +59,13 @@
 				},
 				{
 					"id": 1,
+					"name": "pages/posts/post",
+					"pathName": "pages/posts/post",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
 					"name": "pages/posts/post",
 					"pathName": "pages/posts/post",
 					"query": "",

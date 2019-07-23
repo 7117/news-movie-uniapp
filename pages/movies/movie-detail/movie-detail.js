@@ -1,4 +1,4 @@
-// pages/stars/stars.js
+// pages/movies/movie-detail/movie-detail.js
 Page({
 
   /**
