@@ -92,6 +92,7 @@ Page({
       }
 
       var temp = {
+        // 星星数组的生成
         stars: util.convertToStarsArray(subject.rating.stars),
         title: title,
         average: subject.rating.average,
