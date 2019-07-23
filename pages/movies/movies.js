@@ -50,6 +50,7 @@ Page({
         "Content-Type": "json"
       },
       success: function (res) {
+        // 数据处理函数   数据  类别   类别中文名称
         that.processDoubanData(res.data, settedKey, categoryTitle)
       },
       fail: function (error) {
@@ -89,7 +90,7 @@ Page({
       if (title.length >= 6) {
         title = title.substring(0, 6) + "...";
       }
-      // [1,1,1,1,1] [1,1,1,0,0]
+
       var temp = {
         stars: util.convertToStarsArray(subject.rating.stars),
         title: title,
