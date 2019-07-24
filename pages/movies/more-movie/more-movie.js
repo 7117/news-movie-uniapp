@@ -71,6 +71,7 @@ Page({
     var totalMovies = {}
 
     //如果要绑定新加载的数据，那么需要同旧有的数据合并在一起
+    // 上拉刷新  数据的叠加
     if (!this.data.isEmpty) {
       totalMovies = this.data.movies.concat(movies);
     }
