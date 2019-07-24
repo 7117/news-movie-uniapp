@@ -13,6 +13,7 @@ class Movie {
         if (!data) {
             return;
         }
+        
         var director = {
             avatar: "",
             name: "",
