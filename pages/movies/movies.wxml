@@ -19,6 +19,8 @@
   </view>
 </view>
 
+
+<!-- 進行判斷搜索盤 -->
 <view class="search-panel" wx:if="{{searchPanelShow}}">
   <template is="movieGridTemplate" data="{{...searchResult}}" />
 </view>
