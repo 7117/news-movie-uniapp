@@ -55,6 +55,7 @@ Page({
       }
       app.globalData.g_isPlayingMusic = true;
     });
+    // 设置暂停 图标还原
     wx.onBackgroundAudioPause(function() {
       var pages = getCurrentPages();
       var currentPage = pages[pages.length - 1];
