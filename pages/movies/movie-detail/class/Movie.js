@@ -21,7 +21,6 @@ class Movie {
         if (data.directors[0] != null) {
             if (data.directors[0].avatars != null) {
                 director.avatar = data.directors[0].avatars.large
-
             }
             director.name = data.directors[0].name;
             director.id = data.directors[0].id;
