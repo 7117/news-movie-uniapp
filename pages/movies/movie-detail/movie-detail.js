@@ -9,14 +9,7 @@ Page({
     var url = app.globalData.doubanBase +
       "/v2/movie/subject/" + movieId;
     var movie = new Movie(url);
-    // var movieData = movie.getMovieData();
-    // var that = this;
-    // movie.getMovieData(function (movie) {
-    //   that.setData({
-    //     movie: movie
-    //   })
-    // })
-    //C#、Java、Python lambda
+   
     movie.getMovieData((movie) => {
       this.setData({
         movie: movie
