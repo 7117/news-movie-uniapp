@@ -1,13 +1,43 @@
 <view>
   <swiper indicator-dots="true" autoplay="true">
-    <swiper-item >
+    <swiper-item>
       <image src="../../images/post/bl.png"></image>
     </swiper-item>
-    <swiper-item >
+    <swiper-item>
       <image src="../../images/post/cat.png"></image>
     </swiper-item>
-    <swiper-item >
+    <swiper-item>
       <image src="../../images/post/sls.JPG"></image>
     </swiper-item>
   </swiper>
+
+  <view class="post-container">
+    <view class="post-author-date">
+      <image src="../../images/avatar/1.png" class="post-author"></image>
+      <text class="post-date">NOV 25 2016</text>
+    </view>
+    <text class="post-title">床前明月光床前明月光床前</text>
+    <image class="post-image" src="../../images/post/xiaolong.jpg"></image>
+    <text class="post-content">床前明月光床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前</text>
+    <view class="post-like">
+      <image class="post-like-image" src="../../images/icon/star.png"></image>
+      <text class="post-like-font">22</text>
+      <image class="post-like-image" src="../../images/icon/star.png"></image>
+      <text class="post-like-font">22</text>
+    </view>
+
+    <view class="post-author-date">
+      <image src="../../images/avatar/1.png" class="post-author"></image>
+      <text class="post-date">NOV 25 2016</text>
+    </view>
+    <text class="post-title">床前明月光床前明月光床前</text>
+    <image class="post-image" src="../../images/post/xiaolong.jpg"></image>
+    <text class="post-content">床前明月光床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前</text>
+    <view class="post-like">
+      <image class="post-like-image" src="../../images/icon/star.png"></image>
+      <text class="post-like-font">22</text>
+      <image class="post-like-image" src="../../images/icon/star.png"></image>
+      <text class="post-like-font">22</text>
+    </view>
+  </view>
 </view>
