@@ -5,8 +5,7 @@
     "pages/movies/movies",
     "pages/movies/movie-detail/movie-detail",
     "pages/posts/post-detail/post-detail",
-    "pages/movies/more-movie/more-movie",
-    "pages/welcome"
+    "pages/movies/more-movie/more-movie"
   ],
   "window": {
     "navigationBarBackgroundColor": "#405f80"
@@ -14,8 +13,7 @@
   "tabBar": {
     "borderStyle": "white",
     "position": "bottom",
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/posts/post",
         "text": "阅读",
         "iconPath": "images/tab/yuedu.png",

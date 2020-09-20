@@ -1,4 +1,4 @@
-// pages/welcome.js
+// pages/welcome/welcome.js
 Page({
 
   /**
