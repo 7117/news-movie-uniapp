@@ -1,2 +1,7 @@
-<!--pages/welcome/welcome.wxml-->
-<text>pages/welcome/welcome.wxml</text>
+<view>
+  <image src="../../images/avatar/1.png" style="width:200rpx;height:200rpx;"></image>
+  <text>HELLO,七月</text>
+  <view>
+    <text>开启</text>
+  </view>
+</view>
