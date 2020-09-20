@@ -8,7 +8,7 @@
     "pages/movies/more-movie/more-movie"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#405f80"
+    "navigationBarBackgroundColor": "#b3d4db"
   },
   "tabBar": {
     "borderStyle": "white",

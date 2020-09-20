@@ -1,7 +1,7 @@
-<view>
-  <image src="../../images/avatar/1.png" style="width:200rpx;height:200rpx;"></image>
-  <text>HELLO,七月</text>
-  <view>
-    <text>开启</text>
+<view class="container">
+  <image src="../../images/avatar/1.png" class="user-avatar"></image>
+  <text class="user-name"><text style="color:red">HELLO,</text>七月</text>
+  <view class="moto-container">
+    <text class="moto">开启</text>
   </view>
 </view>
