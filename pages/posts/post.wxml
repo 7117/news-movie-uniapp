@@ -1,5 +1,5 @@
 <view>
-  <swiper indicator-dots="true" autoplay="true" vertical="{{false}}">
+  <swiper indicator-dots="true" autoplay="true">
     <swiper-item>
       <image src="../../images/post/bl.png"></image>
     </swiper-item>
