@@ -1,5 +1,5 @@
 <view>
-  <swiper indicator-dots="true" autoplay="true" vertical="{{true}}">
+  <swiper indicator-dots="true" autoplay="true" vertical="{{false}}">
     <swiper-item>
       <image src="../../images/post/bl.png"></image>
     </swiper-item>
@@ -11,33 +11,21 @@
     </swiper-item>
   </swiper>
 
-  <view class="post-container">
-    <view class="post-author-date">
-      <image wx:if="{{true}}" src="{{avatar}}" class="post-author"></image>
-      <text class="post-date">{{date}}</text>
+  <block wx:for="{{posts_content}}">
+    <view class="post-container">
+      <view class="post-author-date">
+        <image src="{{item.avatar}}" class="post-author"></image>
+        <text class="post-date">{{item.date}}</text>
+      </view>
+      <text class="post-title">{{item.title}}</text>
+      <image class="post-image" src="{{item.imgSrc}}"></image>
+      <text class="post-content">床前明月光床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前</text>
+      <view class="post-like">
+        <image class="post-like-image" src="../../images/icon/star.png"></image>
+        <text class="post-like-font">{{item.author}}</text>
+        <image class="post-like-image" src="../../images/icon/star.png"></image>
+        <text class="post-like-font">{{item.dateTime}}</text>
+      </view>
     </view>
-    <text class="post-title">{{title}}</text>
-    <image class="post-image" src="{{imgSrc}}"></image>
-    <text class="post-content">床前明月光床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前</text>
-    <view class="post-like">
-      <image class="post-like-image" src="../../images/icon/star.png"></image>
-      <text class="post-like-font">{{author}}</text>
-      <image class="post-like-image" src="../../images/icon/star.png"></image>
-      <text class="post-like-font">{{"date " + dateTime}}</text>
-    </view>
-
-    <view class="post-author-date">
-      <image src="../../images/avatar/1.png" class="post-author"></image>
-      <text class="post-date">NOV 25 2016</text>
-    </view>
-    <text class="post-title">床前明月光床前明月光床前</text>
-    <image class="post-image" src="../../images/post/xiaolong.jpg"></image>
-    <text class="post-content">床前明月光床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前</text>
-    <view class="post-like">
-      <image class="post-like-image" src="../../images/icon/star.png"></image>
-      <text class="post-like-font">22</text>
-      <image class="post-like-image" src="../../images/icon/star.png"></image>
-      <text class="post-like-font">22</text>
-    </view>
-  </view>
+  </block>
 </view>
