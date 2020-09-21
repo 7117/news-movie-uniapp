@@ -19,7 +19,7 @@
       </view>
       <text class="post-title">{{item.title}}</text>
       <image class="post-image" src="{{item.imgSrc}}"></image>
-      <text class="post-content">床前明月光床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前明月光床前床前明月光床前</text>
+      <text class="post-content">{{item.content}}</text>
       <view class="post-like">
         <image class="post-like-image" src="../../images/icon/star.png"></image>
         <text class="post-like-font">{{item.author}}</text>
