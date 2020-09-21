@@ -14,7 +14,7 @@
   <view class="post-container">
     <view class="post-author-date">
       <image src="../../images/avatar/1.png" class="post-author"></image>
-      <text class="post-date">NOV 25 2016</text>
+      <text class="post-date">{{date}}</text>
     </view>
     <text class="post-title">床前明月光床前明月光床前</text>
     <image class="post-image" src="../../images/post/xiaolong.jpg"></image>
