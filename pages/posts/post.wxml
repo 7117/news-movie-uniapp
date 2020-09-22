@@ -14,9 +14,9 @@
   </swiper>
 
   <block wx:for="{{posts_content}}">
-  <!-- 加上...相当于把其中一个对象进行平铺了  直接面对属性了 -->
-  <view catchtap="onPostTap" data-postid="{{item.postId}}">
-    <template is="postItem" data="{{...item}}" />
-  </view>
+    <!-- 加上...相当于把其中一个对象进行平铺了  直接面对属性了 -->
+    <view catchtap="onPostTap" data-postid="{{item.postId}}">
+      <template is="postItem" data="{{...item}}" />
+    </view>
   </block>
 </view>
