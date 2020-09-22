@@ -11,6 +11,7 @@ Page({
   },
 
   onPostTap:function(event){
+    console.log(event.currentTarget)
     var postId = event.currentTarget.dataset.postId;
     console.log(postId);
   },
