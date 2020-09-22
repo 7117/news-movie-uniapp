@@ -14,6 +14,7 @@
   </swiper>
 
   <block wx:for="{{posts_content}}">
-    <template is="postItem" data="{{item}}" />
+  <!-- 加上...相当于把其中一个对象进行平铺了  直接面对属性了 -->
+    <template is="postItem" data="{{...item}}" />
   </block>
 </view>
