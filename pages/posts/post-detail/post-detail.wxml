@@ -1,5 +1,5 @@
 <view class="container">
-  <image src="/images/iqiyi.png"></image>
+  <image src="/images/post/sls.JPG" class="head-image"></image>
   <view>
     <image src="/images/avatar/2.png"></image>
     <text>胡歌</text>
@@ -9,7 +9,7 @@
   <text>炉石传说好玩吗</text>
   <view>
     <image src="/images/icon/collection.png"></image>
-    <image src="/images/icon/collection.png"></image>
+    <image src="/images/icon/share.png"></image>
   </view>
   <view>
   </view>
