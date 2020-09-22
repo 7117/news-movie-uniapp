@@ -61,6 +61,10 @@
       "currentL": -1,
       "list": []
     },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
     "miniprogram": {
       "current": 3,
       "list": [
@@ -89,6 +93,13 @@
           "id": -1,
           "name": "pages/movies/movies",
           "pathName": "pages/movies/movies",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/posts/post-detail/post-detail",
+          "pathName": "pages/posts/post-detail/post-detail",
           "scene": null
         }
       ]
