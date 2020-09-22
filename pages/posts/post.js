@@ -11,9 +11,10 @@ Page({
   },
 
   onPostTap:function(event){
-    console.log(event.currentTarget)
-    var postId = event.currentTarget.dataset.postId;
-    console.log(postId);
+    var postId = event.currentTarget.dataset.postid;
+    wx.navigateTo({
+      url: 'post-detail/post-detail',
+    })
   },
 
   /**
