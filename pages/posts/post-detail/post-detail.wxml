@@ -1,4 +1,4 @@
-<view>
+<view class="container">
   <image src="/images/iqiyi.png"></image>
   <view>
     <image src="/images/avatar/2.png"></image>
@@ -11,4 +11,7 @@
     <image src="/images/icon/collection.png"></image>
     <image src="/images/icon/collection.png"></image>
   </view>
+  <view>
+  </view>
+  <text>炉石传说能不好玩吗很好玩很好玩很好玩好嫩好</text>
 </view>
