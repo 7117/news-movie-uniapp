@@ -1,17 +1,20 @@
 <view class="container">
-  <image src="/images/post/sls.JPG" class="head-image"></image>
-  <view>
-    <image src="/images/avatar/2.png"></image>
-    <text>胡歌</text>
-    <text>发表于</text>
-    <text>三天前</text>
+  <image class="head-image" src="/images/post/sls.JPG"></image>
+  <view class="author-date">
+    <image class="avatar" src="/images/avatar/2.png"></image>
+    <text class="author">胡歌</text>
+    <text class="const-text">发表于</text>
+    <text class="date">三天前</text>
   </view>
-  <text>炉石传说好玩吗</text>
-  <view>
-    <image src="/images/icon/collection.png"></image>
-    <image src="/images/icon/share.png"></image>
+  <text class="title">炉石传说好玩吗</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image src="/images/icon/collection.png"></image>
+      <image class="share-img" src="/images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
   </view>
   <view>
   </view>
-  <text>炉石传说能不好玩吗很好玩很好玩很好玩好嫩好</text>
+  <text class="detail">炉石传说能不好玩吗很好玩很好玩很好玩好嫩好</text>
 </view>
