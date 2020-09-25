@@ -5,3 +5,6 @@ swiper{
   height:500rpx;
 }
 
+swiper image{
+  width:100%;
+}

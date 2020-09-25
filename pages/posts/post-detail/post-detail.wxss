@@ -66,7 +66,6 @@
   margin-top: 30rpx;
   letter-spacing: 2px;
   color: #4b556c;
-  margin-left: -420rpx;
 }
 
 .tool {
