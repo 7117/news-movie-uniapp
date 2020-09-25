@@ -9,6 +9,19 @@ Page({
 
   },
 
+  onCollectionTap:function(event){
+    var key = wx.setStorageSync('key', "value");
+    var val = wx.getStorageSync('key');
+    console.log(val)
+  },
+
+  onShareTap:function(event){
+    wx.removeStorage({
+      key: 'key',
+    })
+    console.log(val)
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -16,7 +29,11 @@ Page({
     var postId = option.id;
     var postData = postsData.postList[postId];
     console.log(postData)
-    this.setData(postData)
+    this.setData({
+      postData:postData,
+    })
+
+
   },
 
   /**
