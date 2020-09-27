@@ -4,6 +4,7 @@
     "pages/welcome/welcome",
     "pages/posts/post-detail/post-detail"
   ],
+  "requiredBackgroundModes": ["audio"],
   "window": {
     "navigationBarBackgroundColor": "#b3d4db"
   },

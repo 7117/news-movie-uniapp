@@ -18,9 +18,10 @@ Page({
   onMusicTap: function (event) {
     console.log("audio-s")
 
-    wx.getBackgroundAudioManager({
-      src: 'http://ws.stream.qqmusic.qq.com/C100003GdCmG4NkEOR.m4a?fromtag=38'
-    })
+    var bgMusic = wx.getBackgroundAudioManager();
+    bgMusic.src = 'https://music.163.com/outchain/player?type=2&id=156320&auto=1';
+    bgMusic.title = "tssssitle";
+    bgMusic.play();
 
     console.log("audio-d")
   },
