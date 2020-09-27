@@ -18,8 +18,8 @@ Page({
   onMusicTap: function (event) {
 
     var bgMusic = wx.getBackgroundAudioManager();
-    bgMusic.src = 'http://m10.music.126.net/20200927230909/a5e2c71c2645e7f9d53d0a24fa345298/yyaac/obj/wonDkMOGw6XDiTHCmMOi/3064950665/c551/074f/e6f3/517194e3c9c00d8d8cc04097ebae26f4.m4a';
-    bgMusic.title = "title";
+    bgMusic.src = postsData.postList[[this.data.postId]].music.url;
+    bgMusic.title = postsData.postList[[this.data.postId]].music.title;
 
     var isPlay = this.data.isPlay;
 
