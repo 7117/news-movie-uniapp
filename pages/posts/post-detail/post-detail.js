@@ -1,4 +1,5 @@
 var postsData = require("../../../data/posts-data.js");
+var app = getApp();
 
 Page({
 
@@ -21,17 +22,17 @@ Page({
     bgMusic.src = postsData.postList[this.data.postId].music.url;
     bgMusic.title = postsData.postList[this.data.postId].music.title;
 
-    var isPlay = this.data.isPlay;
+    var g_isPlayingMusic = this.data.g_isPlayingMusic;
 
-    if (isPlay) {
+    if (g_isPlayingMusic) {
       bgMusic.pause();
       this.setData({
-        isPlay: !isPlay
+        g_isPlayingMusic: !g_isPlayingMusic
       })
     } else {
       bgMusic.play();
       this.setData({
-        isPlay: !isPlay
+        g_isPlayingMusic: !g_isPlayingMusic
       })
     }
 
@@ -42,6 +43,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (option) {
+    var globalData = app.globalData;
+
+
     var postId = option.id;
     var postData = postsData.postList[postId];
 
