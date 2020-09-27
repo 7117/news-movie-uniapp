@@ -24,7 +24,7 @@ Page({
 
     this.setData({
       postData: postData,
-      postId:postId
+      postId: postId
     })
 
     // 进行设置收藏的设置
@@ -55,6 +55,31 @@ Page({
       collected: postCollected
     });
 
+    wx.showToast({
+      title: postCollected ? "成功收藏" : "取消收藏",
+      duration: 800,
+    })
+
+  },
+
+  onShareTap: function (event) {
+    wx.showActionSheet({
+      itemList: [
+        '微信',
+        'QQ',
+        'blog'
+      ],
+      itemColor: "red",
+      success: function (res) {
+        // res.cancel是不是点击了取消
+        // res.tapIndex点击的tap的序号
+        wx.showModal({
+          title: '你分享完成',
+          content:'现在好了'
+        })
+        
+      }
+    })
   },
 
   /**
