@@ -15,6 +15,16 @@ Page({
     })
   },
 
+  onMusicTap: function (event) {
+    console.log("audio-s")
+
+    wx.getBackgroundAudioManager({
+      src: 'http://ws.stream.qqmusic.qq.com/C100003GdCmG4NkEOR.m4a?fromtag=38'
+    })
+
+    console.log("audio-d")
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -41,8 +51,6 @@ Page({
 
       wx.setStorageSync('posts_Collected', postsCollected);
     }
-    console.log(postsCollected)
-
   },
 
   onCollectionTap: function (event) {
@@ -75,9 +83,9 @@ Page({
         // res.tapIndex点击的tap的序号
         wx.showModal({
           title: '你分享完成',
-          content:'现在好了'
+          content: '现在好了'
         })
-        
+
       }
     })
   },
