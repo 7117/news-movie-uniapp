@@ -13,7 +13,6 @@ Page({
     wx.removeStorage({
       key: 'key',
     })
-    console.log(val)
   },
 
   /**
@@ -22,8 +21,6 @@ Page({
   onLoad: function (option) {
     var postId = option.id;
     var postData = postsData.postList[postId];
-    console.log(postData)
-
 
     this.setData({
       postData: postData,
@@ -41,8 +38,6 @@ Page({
     } else {
       var postsCollected = {};
       postsCollected[postId] = false;
-      console.log(postsCollected);
-      console.log("11")
 
       wx.setStorageSync('posts_Collected', postsCollected);
     }
@@ -51,7 +46,6 @@ Page({
   },
 
   onCollectionTap: function (event) {
-    console.log("111")
     var postsCollected = wx.getStorageSync('posts_Collected');
     var postCollected = postsCollected[this.data.postId];
     postCollected = !postCollected;
