@@ -9,13 +9,7 @@ Page({
 
   },
 
-  onCollectionTap:function(event){
-    var key = wx.setStorageSync('key', "value");
-    var val = wx.getStorageSync('key');
-    console.log(val)
-  },
-
-  onShareTap:function(event){
+  onShareTap: function (event) {
     wx.removeStorage({
       key: 'key',
     })
@@ -29,10 +23,43 @@ Page({
     var postId = option.id;
     var postData = postsData.postList[postId];
     console.log(postData)
+
+
     this.setData({
-      postData:postData,
+      postData: postData,
+      postId:postId
     })
 
+    // 进行设置收藏的设置
+    var postsCollected = wx.getStorageSync('posts_Collected');
+
+    if (postsCollected) {
+      var postCollected = postsCollected[postId];
+      this.setData({
+        collected: postCollected
+      });
+    } else {
+      var postsCollected = {};
+      postsCollected[postId] = false;
+      console.log(postsCollected);
+      console.log("11")
+
+      wx.setStorageSync('posts_Collected', postsCollected);
+    }
+    console.log(postsCollected)
+
+  },
+
+  onCollectionTap: function (event) {
+    console.log("111")
+    var postsCollected = wx.getStorageSync('posts_Collected');
+    var postCollected = postsCollected[this.data.postId];
+    postCollected = !postCollected;
+    postsCollected[this.data.postId] = postCollected;
+    wx.setStorageSync('posts_Collected', postsCollected);
+    this.setData({
+      collected: postCollected
+    });
 
   },
 
