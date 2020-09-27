@@ -16,14 +16,28 @@ Page({
   },
 
   onMusicTap: function (event) {
-    console.log("audio-s")
 
     var bgMusic = wx.getBackgroundAudioManager();
-    bgMusic.src = 'https://music.163.com/outchain/player?type=2&id=156320&auto=1';
-    bgMusic.title = "tssssitle";
-    bgMusic.play();
+    bgMusic.src = 'http://m10.music.126.net/20200927230909/a5e2c71c2645e7f9d53d0a24fa345298/yyaac/obj/wonDkMOGw6XDiTHCmMOi/3064950665/c551/074f/e6f3/517194e3c9c00d8d8cc04097ebae26f4.m4a';
+    bgMusic.title = "title";
 
-    console.log("audio-d")
+    var isPlay = this.data.isPlay;
+
+    console.log(isPlay);
+
+    if (isPlay) {
+      bgMusic.pause();
+      this.setData({
+        isPlay: !isPlay
+      })
+    } else {
+      bgMusic.play();
+      this.setData({
+        isPlay: !isPlay
+      })
+    }
+
+
   },
 
   /**
@@ -90,53 +104,4 @@ Page({
       }
     })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
