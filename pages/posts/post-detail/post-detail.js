@@ -18,12 +18,10 @@ Page({
   onMusicTap: function (event) {
 
     var bgMusic = wx.getBackgroundAudioManager();
-    bgMusic.src = postsData.postList[[this.data.postId]].music.url;
-    bgMusic.title = postsData.postList[[this.data.postId]].music.title;
+    bgMusic.src = postsData.postList[this.data.postId].music.url;
+    bgMusic.title = postsData.postList[this.data.postId].music.title;
 
     var isPlay = this.data.isPlay;
-
-    console.log(isPlay);
 
     if (isPlay) {
       bgMusic.pause();
