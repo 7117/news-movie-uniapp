@@ -2,9 +2,12 @@
   "pages": [
     "pages/posts/post",
     "pages/welcome/welcome",
-    "pages/posts/post-detail/post-detail"
+    "pages/posts/post-detail/post-detail",
+    "pages/movies/movies"
   ],
-  "requiredBackgroundModes": ["audio"],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
   "window": {
     "navigationBarBackgroundColor": "#b3d4db"
   },
@@ -19,7 +22,7 @@
         "selectedIconPath": "images/tab/yuedu_hl.png"
       },
       {
-        "pagePath": "pages/welcome/welcome",
+        "pagePath": "pages/movies/movies",
         "text": "电影",
         "iconPath": "images/tab/dianying.png",
         "selectedIconPath": "images/tab/dianying_hl.png"
