@@ -45,7 +45,6 @@ Page({
     var that = this;
     wx.getBackgroundAudioManager().onPlay(function () {
       app.globalData.g_isPlayingMusic = true;
-
     });
 
     wx.getBackgroundAudioManager().onPause(function () {
