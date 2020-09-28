@@ -8,9 +8,9 @@
     <image class="post-image" src="{{imgSrc}}"></image>
     <text class="post-content">{{content}}</text>
     <view class="post-like">
-      <image class="post-like-image" src="../../images/icon/star.png"></image>
+      <image class="post-like-image" src="/images/icon/star.png"></image>
       <text class="post-like-font">{{author}}</text>
-      <image class="post-like-image" src="../../images/icon/star.png"></image>
+      <image class="post-like-image" src="/images/icon/star.png"></image>
       <text class="post-like-font">{{dateTime}}</text>
     </view>
   </view>
