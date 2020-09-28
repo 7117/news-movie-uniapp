@@ -22,7 +22,7 @@ Page({
     bgMusic.src = postsData.postList[this.data.postId].music.url;
     bgMusic.title = postsData.postList[this.data.postId].music.title;
 
-    var g_isPlayingMusic = this.data.g_isPlayingMusic;
+    g_isPlayingMusic = this.data.g_isPlayingMusic;
 
     if (g_isPlayingMusic) {
       bgMusic.pause();
@@ -36,13 +36,14 @@ Page({
       })
     }
 
-
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (option) {
+    var globalData = app.globalData;
+
     var that = this;
     wx.getBackgroundAudioManager().onPlay(function () {
       that.setData({
