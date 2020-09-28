@@ -45,7 +45,6 @@ Page({
   onLoad: function (option) {
     var globalData = app.globalData;
 
-
     var postId = option.id;
     var postData = postsData.postList[postId];
 
