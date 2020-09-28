@@ -22,17 +22,17 @@ Page({
     bgMusic.src = postsData.postList[this.data.postId].music.url;
     bgMusic.title = postsData.postList[this.data.postId].music.title;
 
-    g_isPlayingMusic = this.data.g_isPlayingMusic;
+    var isPlay = this.data.isPlay;
 
-    if (g_isPlayingMusic) {
+    if (isPlay) {
       bgMusic.pause();
       this.setData({
-        g_isPlayingMusic: !g_isPlayingMusic
+        isPlay: !isPlay
       })
     } else {
       bgMusic.play();
       this.setData({
-        g_isPlayingMusic: !g_isPlayingMusic
+        isPlay: !isPlay
       })
     }
 
@@ -47,13 +47,13 @@ Page({
     var that = this;
     wx.getBackgroundAudioManager().onPlay(function () {
       that.setData({
-        g_isPlayingMusic: true
+        isPlay: true
       })
     });
 
     wx.getBackgroundAudioManager().onPause(function () {
       that.setData({
-        g_isPlayingMusic: false
+        isPlay: false
       })
     });
 
