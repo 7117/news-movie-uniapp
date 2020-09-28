@@ -43,6 +43,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (option) {
+    var that = this;
+    wx.getBackgroundAudioManager().onPlay(function () {
+      that.setData({
+        g_isPlayingMusic: true
+      })
+    });
+
+    wx.getBackgroundAudioManager().onPause(function () {
+      that.setData({
+        g_isPlayingMusic: false
+      })
+    });
+
+
     var globalData = app.globalData;
 
     var postId = option.id;
