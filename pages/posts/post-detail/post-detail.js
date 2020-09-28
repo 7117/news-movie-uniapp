@@ -22,19 +22,18 @@ Page({
     bgMusic.src = postsData.postList[this.data.postId].music.url;
     bgMusic.title = postsData.postList[this.data.postId].music.title;
 
-    var isPlay = this.data.isPlay;
-
-    if (isPlay) {
+    if (app.globalData.g_isPlayingMusic) {
       bgMusic.pause();
-      this.setData({
-        isPlay: !isPlay
-      })
+      app.globalData.g_isPlayingMusic = !app.globalData.g_isPlayingMusic;
     } else {
       bgMusic.play();
-      this.setData({
-        isPlay: !isPlay
-      })
+      app.globalData.g_isPlayingMusic = !app.globalData.g_isPlayingMusic;
     }
+
+    this.setData({
+      isPlay: app.globalData.g_isPlayingMusic
+    })
+
 
   },
 
@@ -42,20 +41,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (option) {
-    var globalData = app.globalData;
 
     var that = this;
     wx.getBackgroundAudioManager().onPlay(function () {
-      that.setData({
-        isPlay: true
-      })
+      app.globalData.g_isPlayingMusic = true;
+
     });
 
     wx.getBackgroundAudioManager().onPause(function () {
-      that.setData({
-        isPlay: false
-      })
+      app.globalData.g_isPlayingMusic = false;
     });
+    that.setData({
+      isPlay: app.globalData.g_isPlayingMusic
+    })
 
 
     var globalData = app.globalData;
