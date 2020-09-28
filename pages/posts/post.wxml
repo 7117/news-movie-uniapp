@@ -2,13 +2,13 @@
 
 <view>
   <swiper indicator-dots="true" autoplay="true">
-    <swiper-item>
+    <swiper-item catchtap="onPostTap" data-postid="0">
       <image src="../../images/post/bl.png"></image>
     </swiper-item>
-    <swiper-item>
+    <swiper-item catchtap="onPostTap" data-postid="1">
       <image src="../../images/post/cat.png"></image>
     </swiper-item>
-    <swiper-item>
+    <swiper-item catchtap="onPostTap" data-postid="3">
       <image src="../../images/post/sls.JPG"></image>
     </swiper-item>
   </swiper>
